@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'bragaoutline';
+    src: url('assets/fonts/braga_outline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bragaitalic';
+    src: url('assets/fonts/braga_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bragaregular';
+    src: url('assets/fonts/braga-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	text-align: center;
+}
+
+#main-container {
+	background-color: white;
+	border: 3px solid black;
+	border-radius: 10px;
+	min-width: 30%;
+	display: inline-block;
+	padding: 1% 2% 2% 2%;
+}
+
+h1 {
+	font-family: 'bragaitalic', "Georgia", "Bitstream Vera Serif", serif;
+	border: 2px;
+	margin: 0;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	color: pink;
+}
+
+#content {
+	font-family: "Georgia", "Bitstream Vera Serif", serif;
+	text-align: left;
+}
+
+h2 {
+	margin-bottom: 1%;
+	text-decoration: underline;
+}
+
+#readings h3 { 
+	margin-left: 2%;
+}
+#readings p { 
+	margin-left: 10%;
+	max-width: 50ch;
+}
+
+h3 {
+	margin: 2% 0 0 0;
+}
+
+h3::before {
+	content: "♥ ";
+	color: red;
+}
+
+.reading {
+	margin: 1% 0 1% 0;
+}
+
+.reading::before {
+	content: url("assets/icons/paper.gif");
+	vertical-align: middle;
+	margin-right: 1%;
+}
+
+#resources ul {
+	margin-top: 1%;
+	margin-bottom: 0;
+}
+
+a:hover {
+	background-color: rgba(255,192,203,0.5);
+}
+
+@media screen and (max-width: 405px) {
+	h1 { font-size: 150%; }
+	#heading { text-align: center; }
+	#main-container { padding: 2% 3% 3% 3%; }
+}
